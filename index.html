@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Validation</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
-  <form id="form_section" class="animate__animated animate__zoomIn">
+  <form id="form_section">
       <h1>Registracija korisnika</h1>
       <div>
           <label for="ime_prezime">Ime i prezime:</label>
@@ -32,8 +31,15 @@
           <label for="ponovi_lozinku">Ponovi lozinku</label>
           <input id="ponovi_lozinku" type="text" name="ponovi_lozinku" placeholder="***********">
       </div>
-      <div>
-          <button class="btn">Registruj se</button>
+
+      <div class="btn_section">
+        <button class="btn">
+          <svg width="130px" height="40px" viewBox="0 0 130 40" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Registruj se</span>
+        </button>
       </div>
   </form>
 <script src="script.js"></script>

@@ -19,7 +19,10 @@ body{
 }
 
 form{
-	height: 400px;
+	margin: 0 30px;
+	width: 400px;
+	min-width: 240px;
+	height: 500px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	background: rgb(0,0,0);
 	background: linear-gradient(77deg, rgb(141, 141, 141) 0%, rgb(185, 185, 185) 35%, rgb(235, 235, 235) 100%);
@@ -30,11 +33,60 @@ form{
 h1{
 	color: rgb(0, 0, 0);
 	margin-bottom: 20px;
+	text-align: center;
+	font-size: 1.6rem;
 }
 
 div{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
-	row-gap: 7px;
+	row-gap: 5px;
 }
+
+input{
+	padding: 7px;
+	font-size: 1.3rem;
+}
+
+.btn_section{
+	width: 180px;
+  	height: 60px;
+  	position: absolute;
+}
+
+.btn {
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid #91C9FF;
+	outline: none;
+	transition: 1s ease-in-out;
+  }
+  
+  svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	fill: none;
+	stroke: #fff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+	transition: 1s ease-in-out;
+	background: #4F95DA;
+  }
+  
+  .btn:hover svg {
+	stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+  }
