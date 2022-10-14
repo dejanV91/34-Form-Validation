@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 16px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(224, 250, 241);
+}
+
+form{
+	height: 400px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	background: rgb(0,0,0);
+	background: linear-gradient(77deg, rgb(141, 141, 141) 0%, rgb(185, 185, 185) 35%, rgb(235, 235, 235) 100%);
+	border-radius: 7px;
+	padding: 35px;
+}
+
+h1{
+	color: rgb(0, 0, 0);
+	margin-bottom: 20px;
+}
+
+div{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	row-gap: 7px;
+}
