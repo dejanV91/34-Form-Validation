@@ -95,8 +95,12 @@ li{
   }
   
   .btn span {
-	color: rgb(255, 255, 255);
+	color: rgb(63, 62, 62);
 	font-size: 18px;
 	font-weight: 100;
+  }
+
+  .btn:hover span{
+	color: rgb(255, 255, 255);
   }
 
