@@ -25,7 +25,7 @@ form{
 	min-width: 240px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	background: rgb(0,0,0);
-	background: linear-gradient(77deg, rgb(141, 141, 141) 0%, rgb(185, 185, 185) 35%, rgb(235, 235, 235) 100%);
+	background: linear-gradient(77deg, rgb(220, 220, 220) 0%, rgb(230, 230, 230) 35%, rgb(255, 255, 255) 100%);
 	border-radius: 7px;
 	padding: 35px 35px 70px 35px;
 }
@@ -47,6 +47,14 @@ div{
 input{
 	padding: 4px;
 	font-size: 1rem;
+}
+
+li{
+	list-style: none;
+	font-size: .8rem;
+	color: red;
+	font-family: sans-serif;
+	font-weight: 100;
 }
 
 .btn_section{
@@ -87,7 +95,8 @@ input{
   }
   
   .btn span {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-size: 18px;
 	font-weight: 100;
   }
+
