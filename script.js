@@ -21,9 +21,21 @@ inputs.forEach((element) => {
             switch(inputName){
                 case "ime_prezime":
                     let validation = currentValue.trim();
+
+                    let sumLetters = 0;
+                    let numberLetters = validation.split("");
+                    numberLetters.forEach((letters)=>{
+                        if(letters !== " "){
+                            sumLetters += letters.length;
+                        }
+                    })
+
                     validation = validation.split(" ");
                     if (validation.length < 2) {
                         errors[inputName] = ["Mora da se upise ime i prezime"];
+                    }
+                    if(sumLetters < 5){
+                        errors[inputName] = ["Mora da ima najmanje 5 karaktera"];
                     }
                 break;
 
