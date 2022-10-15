@@ -27,6 +27,8 @@ inputs.forEach((element) => {
 const populateErrors = () => {
     for (let key of Object.keys(errors)){
         let input = document.querySelector(`input[name = "${key}"]`);
-
+        let parentElement = input.parentElement;
+        let errorsElement = document.createElement("ul");
+        parentElement.appendChild(errorsElement);
     }
 };
