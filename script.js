@@ -21,22 +21,28 @@ inputs.forEach((element) => {
             switch(inputName){
                 case "ime_prezime":
                     let validation = currentValue.trim();
-                    console.log(validation);
                     validation = validation.split(" ");
                     if (validation.length < 2) {
                         errors[inputName] = ["Mora da se upise ime i prezime"];
-                        populateErrors();
                     }
                 break;
 
                 case "email":
-                    if () {
-                        
+                    if (!validateEmail(currentValue)) {
+                        errors[inputName] = ["Email nije dobar"]
                     }
+                break;
+
+                case "ponovi_lozinku":
+                    let lozinka = document.querySelector("input[name='lozinka']").value;
+                    if (currentValue !== lozinka) {
+                        errors[inputName] = ["Ponovljena lozinka nije ista kao lozinka"];
+                    }
+                break;
             }
 
         } else {
-            errors[inputName] = ["Nema dovoljno slova"];
+            errors[inputName] = ["Mora da ima najmanje 5 karaktera"];
         } 
 
         populateErrors()
@@ -63,3 +69,11 @@ const populateErrors = () => {
     }
 };
 
+
+const validateEmail = (email) => {
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+        return true
+    }else{
+        return false
+    }
+};
